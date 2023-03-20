@@ -142,7 +142,8 @@ namespace OutcoldSolutions.ConfigTransformationTool
 
                 XmlDocument document = new XmlDocument()
                                            {
-                                               PreserveWhitespace = this.PreserveWhitespace
+                                               PreserveWhitespace = this.PreserveWhitespace,
+                                               XmlResolver = null
                                            };
 
                 document.Load(this.SourceFilePath);
